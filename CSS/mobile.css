@@ -1,0 +1,50 @@
+    html {
+        font-size: 100%;
+    }
+
+
+@media screen and (max-width: 768px) 
+
+{
+
+
+
+
+    li{
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 1rem;;
+        float: left;
+    }
+
+     
+
+    .box {
+        height: 5rem;
+         display: flex;
+         flex-direction: column;
+         }
+
+    .box-two {
+        
+        display: none;
+    }
+
+       
+    .footer {
+        height: 5rem;
+        flex-direction: column;
+    }
+
+
+    table img{
+        height: 90px;
+        width: 85px;
+    }
+
+
+
+}
