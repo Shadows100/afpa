@@ -1,0 +1,89 @@
+body {
+    padding-left: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 1500px;
+    }
+
+    * a:link, a:visited{
+        color: white;
+        
+    }
+
+    /* Logo Jarditou */
+    img.logo {
+        
+        float:left;
+        display: block;
+        margin-left: 15px;
+        margin-right: auto ;
+    } 
+    /* Image promo */
+    
+    img.promo {
+       
+        width: 100%;
+        display: block;
+    }
+
+    /* Test "Tout le jardin" */
+    
+    .title{
+       
+        font-size: 25px;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        justify-content: center ;   
+    
+        }
+    
+    li {
+        display: inline;
+        font: bolder, underline;
+        }
+
+
+    /* Boite noir avec les liens ed accueil */
+   
+    .box {
+   
+        padding: 1px;
+        margin: 0 0 4px 0 ;
+        height: 50px;
+        width: 100%;
+        background: black;
+    }
+
+    /* Ecriture */
+
+    #gcontainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+   /* Colonne de droitre */
+
+    .box-two {
+        display: flex;
+        background-color: rgba(173, 173, 173, 0.493);
+        height: auto;
+        width: 40%;
+        margin: 5px;
+
+    }
+     
+
+
+    /* Boite noir avec mention légales etc.. */
+     
+    .footer {
+       
+        padding: 1px;
+        height: 50px;
+        width: 100%;
+        background: black;
+        }
+
+
