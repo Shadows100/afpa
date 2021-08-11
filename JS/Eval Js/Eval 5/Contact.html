@@ -75,21 +75,21 @@
         <div class="row">
         <div class="col-12">
             <p>*Ces Zones sont obligatoires</p>
-        
+              <form action="http://bienvu.net/script.php" method="GET" id="formCoordonees">
                 <fieldset>
-                    <form action="http://bienvu.net/script.php" method="GET" id="Formulaire_contact">
+                    
                     <h1>Coodornées</h1>
                     <div class="form-group">
 
 
                         <label for="Nom" >Votre nom* : </label>
                       <input type="text" class="form-control" id="Nom" name="Nom" placeholder="Veuillez saisir votre nom"><br>
-                      <span id="erreur1" style="color: red;"></span>
+                      <span id="erreur1"></span>
 
                         <label for="Prenom">Votre prenom* : </label>
                         <input type="text" class="form-control" id="Prenom" name="Prenom" 
                             placeholder="Veuillez saisir votre prénom"><br>
-                        <span id="erreur2" style="color: red;"></span>
+                        <span id="erreur2"></span>
                 
                 
                 
@@ -111,8 +111,8 @@
 
                  
                     
-                    <div class="input-group mb-3">
-                        <input type="Date" name="DateNaissance" id="Date" class="form-control">
+                    <br><div class="input-group mb-3">
+                        <input type="Date" name="Date" id="Date" class="form-control">
                         <span class="input-group-text">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-calendar-fill" viewBox="0 0 16 16">
@@ -120,19 +120,19 @@
                               d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
                           </svg>
                           </span>
-                          <span id="error4" style="color: red;"></span>
+                          <span id="erreur3"></span>
                       </div>
 
                     <div class="form-group">
                         <label for="Code">Code postal* : </label>
                         <input type="text" class="form-control" id="Code-Postal" name="Code"><br>
-                        <span id="erreur5" style="color: red;"></span>
+                        <span id="erreur4"></span>
+                    </div>
 
                                 
                     <div class="form-group">
                         <label for="Adresse">Adresse : </label>
                         <input type="text" class="form-control" id="Adresse" name="Adresse"><br>
-                        <span id="erreur6" style="color: red;"></span>
                     </div>
 
 
@@ -142,15 +142,17 @@
                     <div class="form-group">
                         <label for="Ville">Ville : </label>
                         <input type="text" class="form-control" id="Ville" name="Ville"><br>
-                        <span id="erreur7" style="color: red;"></span>
+                    </div>
 
                     
                     <div class="form-group">
                     <label for="Email">Email* : </label>
                     <input type="text" class="form-control" id="Email" name="Email" placeholder="Exemple@gmail.com"><br>
-                    <span id="erreur8" style="color: red;"></span>
-                    
-
+                    <span id="erreur5"></span>
+                    </div>
+                    </div>
+                    </fieldset>
+                    <fieldset>
 
 
                 
@@ -164,18 +166,18 @@
                         <option value="Reclamation">Réclamation</option> 
                         <option value="Autres">Autres</option>
                     </select><br>
-                    <span id="erreur9" style="color: red;"></span>
+                    <span id="erreur6"></span>
                     
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Votre question:*</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <span id="erreur10" style="color: red;"></span>
+                        <span id="erreur7"></span>
 
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="disabledFieldsetCheck">J'accepte le traitement de ce formulaire
                         </label>
-                        <span id="erreur9" style="color: red;"></span>
+                        <span id="erreur8"></span>
                     </div><br>
 
                     <button type="submit" class="btn btn-dark">Envoyer</button>
@@ -211,8 +213,6 @@
                         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
                         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
                         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-                        <script src="Eval exo 5.js"></script>
+                        <script src="Eval-exo-5.js"></script>
                         </body>
                         </html>
-    
-    
