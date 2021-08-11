@@ -8,14 +8,14 @@ function valider(event) {
 var Nom = formCoordonees.elements["Nom"];
 var Prenom = formCoordonees.elements["Prenom"];
 var Date = formCoordonees.elements["Date"];
-// var Code = formCoordonees.elements["Code-Postal"];
-// var Email = formCoordonees.elements["Email"];
-// var Sujet = formCoordonees.elements["Sujet"];
-// var Question = formCoordonees.elements["Question"];
-// var validEmail = /^[a-z0-9]?([_.-]?[a-z0-9])*@[a-z0-9]+([_.-]?[a-z0-9]+)?[.]{1}[a-z]{2,6}$/;
+var Code = formCoordonees.elements["Code-Postal"];
+var Email = formCoordonees.elements["Email"];
+var Sujet = formCoordonees.elements["Sujet"];
+var Question = formCoordonees.elements["Question"];
+var validEmail = /^[a-z0-9]?([_.-]?[a-z0-9])*@[a-z0-9]+([_.-]?[a-z0-9]+)?[.]{1}[a-z]{2,6}$/;
 var validPrenom = /^[A-Za-z]([-]?[A-Za-z])+$/;
-// var validCode = /^[\d]{5}$/;
-// var validquest = /^[a-zA-Z\d\s?']*$/;
+var validCode = /^[\d]{5}$/;
+var validquest = /^[a-zA-Z\d\s?']*$/;
 var erreur;
 
 
@@ -36,13 +36,13 @@ var erreur;
 
 if (Nom.value == "") {
     event.preventDefault()
-    erreur = "<p style='color: red;'> Saisie un nom fdp </p>";
+    erreur = "<p style='color: red;'> Saisie un nom  </p>";
     document.getElementById("erreur1").innerHTML= erreur;
     }
 
     else if (validPrenom.exec(Prenom.value) ==  null) {
         event.preventDefault()
-        erreur = "<p style='color: red;'>te fous pas de ma gueule met un nom existant </p>";
+        erreur = "<p style='color: red;'>met un nom existant </p>";
         document.getElementById("erreur1").innerHTML = erreur;
     }
 
@@ -57,13 +57,13 @@ if (Nom.value == "") {
 
     if (Prenom.value == "") {
         event.preventDefault()
-        erreur = "<p style='color: red;'>Et ton prénom connard </p>";
+        erreur = "<p style='color: red;'>met ton prénom  </p>";
         document.getElementById("erreur2").innerHTML= erreur;
         }
 
         else if (validPrenom.exec(Prenom.value) ==  null) {
             event.preventDefault()
-            erreur = "<p style='color: red;'>te fous pas de ma gueule met un prenom existant </p>";
+            erreur = "<p style='color: red;'>met un prenom existant </p>";
             document.getElementById("erreur2").innerHTML = erreur;
         }
 
@@ -96,7 +96,7 @@ if (Nom.value == "") {
 
     else if (validCode.exec(Code.value) ==null) {
         event.preventDefault()
-        erreur = "nique ta mère a laisser du blanc saisie un code postal";
+        erreur = " saisie un code postal";
         document.getElementById("erreur4").innerHTML = erreur;
     }
     
@@ -109,7 +109,7 @@ if (Nom.value == "") {
 if (Email.value == "") {
     event.preventDefault()
     erreur = "<p style='color: red;'>Saisissez  une adresse email.</p>";
-    document.getElementById("error5").innerHTML = erreur;
+    document.getElementById("erreur5").innerHTML = erreur;
 
   } else if (validEmail.exec(email.value) == null) {
     event.preventDefault()
@@ -146,9 +146,10 @@ if (Email.value == "") {
 
 
   //Acceptations des conditions
-  if (formCoord.CheckTIF.checked == false) {
-    erreur = "<p style='color: red;'>Veuillez accepter le traitement informatique des données pour envoyer le formulaire.</p>";
-    document.getElementById("erreur8").innerHTML = erreur;
+  if (formCoordonees.CheckTIF.checked == false) {
+    event.preventDefault();
+    erreur = "<p style='color: red;'>cocher cette case</p>";
+    document.getElementById("erreur8").innerHTML = erreur ;
   }
 
 
