@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <form action="http://bienvu.net/script.php" method="GET" id="formulaire"></form>
 
     <title>Jarditou</title>
 </head>
@@ -75,85 +74,116 @@
                             <!-- Contact -->
         <div class="row">
         <div class="col-12">
-            <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
+            <p>*Ces Zones sont obligatoires</p>
         
                 <fieldset>
-                    <p>*Ces Zones sont obligatoires</p>
+                    <form action="http://bienvu.net/script.php" method="GET" id="Formulaire_contact">
                     <h1>Coodornées</h1>
                     <div class="form-group">
-                  
-                                
 
-                    <label for="Nom" >Votre nom* : </label>
-                    <input type="text" class="form-control" id="formcontrol" name="Nom" placeholder="Veuillez saisir votre nom"><br>
-                    <span id="erreur" style="color: red;"></span>
 
-                    <label for="Nom">Votre prenom* : </label>
-                    <input type="text" class="form-control" id="formcontrol" name="Prenom" placeholder="Veuillez saisir votre prénom"><br>
-                    <span id="erreur" style="color: red;"></span>
+                        <label for="Nom" >Votre nom* : </label>
+                      <input type="text" class="form-control" id="Nom" name="Nom" placeholder="Veuillez saisir votre nom"><br>
+                      <span id="erreur1" style="color: red;"></span>
 
-                    <label for="radio">Sexe*:</label><br> 
-                    <div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Feminin" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Féminin</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Masculin" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Masculin</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Neutre" id="inlineRadio3" value="option3">
-                        <label class="form-check-label" for="inlineRadio3">Neutre</label>
-                        <span id="erreur" style="color: red;"></span>
-                    </div>
-                    </div>
+                        <label for="Prenom">Votre prenom* : </label>
+                        <input type="text" class="form-control" id="Prenom" name="Prenom" 
+                            placeholder="Veuillez saisir votre prénom"><br>
+                        <span id="erreur2" style="color: red;"></span>
+                
+                
+                
+                        <label for="radio">Sexe*:</label><br> 
+                                    <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="Feminin" id="Femme" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Féminin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="Masculin" id="Homme" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Masculin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="Neutre" id="Neutre" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Neutre</label>
+                                    </div>
+                                    </div>
+
                  
                     
-                    <br><label for="Date">Date de naissance* :</label>
-                    <input type="date" class="form-control" id="formcontrol" name="date" id="Date"><br>
+                    <div class="input-group mb-3">
+                        <input type="Date" name="DateNaissance" id="Date" class="form-control">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
+                          </svg>
+                          </span>
+                          <span id="error4" style="color: red;"></span>
+                      </div>
 
                     <div class="form-group">
-                    <label for="Code">Code postal* : </label>
-                    <input type="text" class="form-control" id="formcontrol" name="Code"><br>
+                        <label for="Code">Code postal* : </label>
+                        <input type="text" class="form-control" id="Code-Postal" name="Code"><br>
+                        <span id="erreur5" style="color: red;"></span>
+
+                                
+                    <div class="form-group">
+                        <label for="Adresse">Adresse : </label>
+                        <input type="text" class="form-control" id="Adresse" name="Adresse"><br>
+                        <span id="erreur6" style="color: red;"></span>
+                    </div>
+
+
+
+
 
                     <div class="form-group">
-                    <label for="Adresse">Adresse : </label>
-                    <input type="text" class="form-control" id="formcontrol" name="Adresse"><br>
+                        <label for="Ville">Ville : </label>
+                        <input type="text" class="form-control" id="Ville" name="Ville"><br>
+                        <span id="erreur7" style="color: red;"></span>
 
-                    <div class="form-group">
-                    <label for="Ville">Ville : </label>
-                    <input type="text" class="form-control" id="formcontrol" name="Ville"><br>
-
+                    
                     <div class="form-group">
                     <label for="Email">Email* : </label>
-                    <input type="text" class="form-control" id="formcontrol" name="Email" placeholder="Exemple@gmail.com"><br>
-                
-                        <h1>Votre demande</h1>
-                        <label for="radio">Sujet* : </label>
-                        <select class="form-control form-control-lg">
-                            <option value="selectionnrt">Veuillez séléctionner un sujet</option>
-                            <option value="Commandes">Mes commandes</option> 
-                            <option value="Produit">Question sur un produit</option> 
-                            <option value="Reclamation">Réclamation</option> 
-                            <option value="Autres">Autres</option>
-                        </select><br>
-                        
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Votre question:*</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <input type="text" class="form-control" id="Email" name="Email" placeholder="Exemple@gmail.com"><br>
+                    <span id="erreur8" style="color: red;"></span>
+                    
 
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="disabledFieldsetCheck">J'accepte le traitement de ce formulaire
-                            </label>
-                        </div><br>
-                        <button type="submit" class="btn btn-dark">Envoyer</button>
-                        <button type="reset" class="btn btn-dark">Annuler</button>
-                        </fieldset>
-                    </form>
-                    </div>
-                    </div>
+
+
+                
+                   
+                    <h1>Votre demande</h1>
+                    <label for="radio">Sujet* : </label>
+                    <select id="Sujet" class="form-control form-control-lg">
+                        <option value="selectionnrt">Veuillez séléctionner un sujet</option>
+                        <option value="Commandes">Mes commandes</option> 
+                        <option value="Produit">Question sur un produit</option> 
+                        <option value="Reclamation">Réclamation</option> 
+                        <option value="Autres">Autres</option>
+                    </select><br>
+                    <span id="erreur9" style="color: red;"></span>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Votre question:*</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <span id="erreur10" style="color: red;"></span>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="disabledFieldsetCheck">J'accepte le traitement de ce formulaire
+                        </label>
+                        <span id="erreur9" style="color: red;"></span>
+                    </div><br>
+
+                    <button type="submit" class="btn btn-dark">Envoyer</button>
+                    <button type="reset" class="btn btn-dark">Annuler</button>
+                    </fieldset>
+                </form>
+                </div>
+                </div>
 
                     <!-- End -->
 
