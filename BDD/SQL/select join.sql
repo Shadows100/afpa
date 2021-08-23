@@ -78,3 +78,15 @@ JOIN reservation
 ON res_id = hot_id
 JOIN client 
 ON cli_id = hot_id;
+
+-- 17 - Afficher la durée moyenne des réservations par station
+
+USE hotel;
+
+SELECT sta_nom, AVG(datediff(res_date_fin,res_date_debut)) AS res_date
+FROM station 
+JOIN reservation
+ON res_id = sta_id
+GROUP BY sta_nom;
+
+
