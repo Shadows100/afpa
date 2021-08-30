@@ -1,7 +1,6 @@
 DROP DATABASE if EXISTS evalexo1;
 
 CREATE DATABASE evalexo1;
-
 USE evalexo1;
 
 CREATE TABLE CLIENT (
