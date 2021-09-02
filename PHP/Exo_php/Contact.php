@@ -192,8 +192,9 @@
                     <!-- Partie PHP -->
 
                      <form action="intput.php" method="post" enctype="multipart/form-data">
-                     <input type="file" name="fichier"> 
-
+                        <input type="file" name="fichier"> 
+                        <button class="btn btn-outline-secondary" type="submit" name="envoyer" value="Ajouter">Ajouter</button>
+                </form>
 
                     <!-- End -->
 
