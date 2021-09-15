@@ -3,7 +3,7 @@ CREATE DATABASE Gescom;
 USE Gescom;
 
 CREATE TABLE customers (
-cus_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+cus_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,gescom_struct
 cus_lastname VARCHAR(30),
 cus_firstname VARCHAR(30),
 cus_adress VARCHAR(30),
