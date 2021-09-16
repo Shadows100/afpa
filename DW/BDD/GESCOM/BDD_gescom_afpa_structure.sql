@@ -141,7 +141,9 @@ CREATE TABLE IF NOT EXISTS `orders_details` (
   PRIMARY KEY (`ode_id`),
   KEY `ode_ord_id` (`ode_ord_id`) USING BTREE,
   KEY `ode_pro_id` (`ode_pro_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+
+
 
 -- --------------------------------------------------------
 
@@ -255,6 +257,9 @@ ALTER TABLE `suppliers`
   ADD CONSTRAINT `suppliers_ibfk_1` FOREIGN KEY (`sup_countries_id`) REFERENCES `countries` (`cou_id`);
 COMMIT;
 
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
