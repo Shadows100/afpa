@@ -39,3 +39,4 @@ FOREIGN KEY (pro_num) REFERENCES produit (pro_num)
 
 CREATE INDEX index_name ON `client`(cli_nom);
 SHOW INDEX from `client`  
+ 
