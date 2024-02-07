@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body:focus {
+    outline: none;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#tblBingo {
+    border-collapse: collapse;
+    height: 25rem;
+    width: 25rem;
+    text-align: center;
+    font-size: 22pt;
+    cursor: pointer;
+}
+
+#tblBingo td {
+    padding: 0.3rem;
+ }
+
+ .cell-format {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    border: 0.5px solid #cccece;
+}
+
+.cell-format:hover {
+    background-color: #cccece;
+}
+
+.letter-div {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letters-bingo {
+    padding: 0 1.3rem;
+    font-size: 40pt;
+    display: none;
+}
+
+.strickout {
+    text-decoration: line-through;
+    color: #a6a3a3;
+    font-size: 18pt;
+    pointer-events: none;
+}
+
+.show-bingo {
+    display: inline;
+}
